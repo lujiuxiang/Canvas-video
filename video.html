@@ -30,10 +30,10 @@
 		function draw1() {
 		   video.play();
 		    timer = setInterval(function(){
-//		      if(video.currentTime >=3.8){   //视频时间在3.8s时停止
-//		         video.pause();
-//		         clearInterval(timer);
-//		      };
+		      if(video.currentTime >=3.8){   //视频时间在3.8s时停止
+		         video.pause();
+		         clearInterval(timer);
+		      };
 		      context.drawImage(video, 0, 0, canvas.width, canvas.height);//绘制视频
 		   },16);
 		};
